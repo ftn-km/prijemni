@@ -1,0 +1,20 @@
+{
+  "name": "secretbots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "botly": "^1.4.2",
+    "express": "^4.15.5",
+    "facebook-bot-messenger": "^1.0.7",
+    "request": "^2.72.0",
+    "config": "^1.20.4",
+    "ejs": "^2.4.2"
+  }
+}

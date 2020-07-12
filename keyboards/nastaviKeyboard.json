@@ -1,0 +1,17 @@
+﻿{
+  "Type": "keyboard",
+  "InputFieldState": "hidden",
+  "Buttons": [
+    {
+      "Columns": 6,
+      "Rows": 1,
+      "Text": "<font color='#FAFAFA'>НАСТАВИ</font>",
+      "TextSize": "large",
+      "TextHAlign": "center",
+      "TextVAlign": "center",
+      "ActionType": "reply",
+      "ActionBody": "pravopis-gramatika",
+      "BgColor": "#F44236"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+﻿{
+  "Type": "keyboard",
+  "InputFieldState": "hidden",
+      "Buttons": [
+        {
+          "TextHAlign": "center",
+          "Text": "<font color='#FFFFFF'>Правопис</font>",
+          "BgColor": "#F44236",
+          "ActionBody": "pravopis",
+          "TextVAlign": "center",
+          "Rows": 1,
+          "ActionType": "reply",
+          "Columns": 3,
+          "TextSize": "medium"
+        },
+        {
+          "Text": "<font color='#FFFFFF'>Граматика</font>",
+          "BgColor": "#F44236",
+          "Rows": 1,
+          "ActionBody": "gramatika",
+          "Columns": 3,
+          "TextSize": "medium",
+          "TextVAlign": "center",
+          "TextHAlign": "center",
+          "ActionType": "reply"
+        },
+        {
+          "ActionBody": "uputstvo",
+          "ActionType": "reply",
+          "Text": "<font color='#FFFFFF'>Како се пише ...</font>",
+          "BgColor": "#F44236",
+          "TextSize": "medium",
+          "Columns": 6,
+          "Rows": 1,
+          "TextVAlign": "center",
+          "TextHAlign": "center"
+        }
+      ]
+}
