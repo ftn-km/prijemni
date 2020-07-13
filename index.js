@@ -44,7 +44,7 @@ bot.onTextMessage(/konkursniRokDatum/i, (message, response) =>
   response.send(new KeyboardMessage(konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard)));
+  response.send(new TextMessage(`Тренутно је активан други конкурсни рок за упис у школску 2020/2021. годину`,konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/datum/i, (message, response) =>
   response.send("Датуми за полагање су..."));
