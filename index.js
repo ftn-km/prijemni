@@ -24,7 +24,8 @@ function say(response, message) {
 }
 
 const bot = new ViberBot({
-  authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
+  authToken: "4bb8a343f627d05e-c4ad293fa4e4aacf-dd519658cbc1069d"
+  //authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
   name: "ftnkmprijemni",
   avatar: "https://raw.githubusercontent.com/paundo/viber-bot/master/pravopis.png" // It is recommended to be 720x720, and no more than 100kb.
 });
