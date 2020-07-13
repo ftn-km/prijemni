@@ -23,17 +23,6 @@
           "TextVAlign": "center",
           "TextHAlign": "center",
           "ActionType": "reply"
-        },
-        {
-          "ActionBody": "uputstvo",
-          "ActionType": "reply",
-          "Text": "<font color='#FFFFFF'>Како се пише ...</font>",
-          "BgColor": "#F44236",
-          "TextSize": "medium",
-          "Columns": 6,
-          "Rows": 1,
-          "TextVAlign": "center",
-          "TextHAlign": "center"
         }
       ]
 }
