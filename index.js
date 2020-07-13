@@ -44,7 +44,7 @@ bot.onTextMessage(/konkursniRokDatum/i, (message, response) =>
   response.send(new KeyboardMessage(konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send("Тренутно је активан други Конкурсни рок"));
+  response.send(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard)));
 
 bot.onTextMessage(/datum/i, (message, response) =>
   response.send("Датуми за полагање су..."));
