@@ -4,9 +4,9 @@
       "Buttons": [
         {
           "TextHAlign": "center",
-          "Text": "<font color='#FFFFFF'>Правопис</font>",
+          "Text": "<font color='#FFFFFF'>Конкурсни рок</font>",
           "BgColor": "#F44236",
-          "ActionBody": "pravopis",
+          "ActionBody": "konkursniRok",
           "TextVAlign": "center",
           "Rows": 1,
           "ActionType": "reply",
@@ -14,10 +14,10 @@
           "TextSize": "medium"
         },
         {
-          "Text": "<font color='#FFFFFF'>Граматика</font>",
+          "Text": "<font color='#FFFFFF'>Датум</font>",
           "BgColor": "#F44236",
           "Rows": 1,
-          "ActionBody": "gramatika",
+          "ActionBody": "datum",
           "Columns": 3,
           "TextSize": "medium",
           "TextVAlign": "center",

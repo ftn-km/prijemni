@@ -5,12 +5,12 @@
     {
       "Columns": 6,
       "Rows": 1,
-      "Text": "<font color='#FAFAFA'>НАСТАВИ</font>",
+      "Text": "<font color='#FAFAFA'>Настави</font>",
       "TextSize": "large",
       "TextHAlign": "center",
       "TextVAlign": "center",
       "ActionType": "reply",
-      "ActionBody": "pravopis-gramatika",
+      "ActionBody": "konkursniRokDatum",
       "BgColor": "#F44236"
     }
   ]

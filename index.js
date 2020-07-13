@@ -14,8 +14,7 @@ const request = require('request');
 
 
 const nastaviKeyboard = require('./keyboards/nastaviKeyboard.json');
-const pravopisGramatikaPocetnaKeyboard = require('./keyboards/pravopisGramatikaPocetnaKeyboard.json');
-
+const konkursniRokDatumKeyboard = require('./keyboards/konkursniRokDatumKeyboard.json');
 
 
 
@@ -41,8 +40,8 @@ bot.onSubscribe(response => {
   say(response, `Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!`);
 });
 */
-bot.onTextMessage(/pravopis-gramatika/i, (message, response) =>
-  response.send(new KeyboardMessage(pravopisGramatikaPocetnaKeyboard)));
+bot.onTextMessage(/konkursniRokDatum/i, (message, response) =>
+  response.send(new KeyboardMessage(konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
