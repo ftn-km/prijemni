@@ -44,10 +44,10 @@ bot.onTextMessage(/konkursniRokDatum/i, (message, response) =>
   response.send(new KeyboardMessage(konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send("Тренутно је активан други Конкурсни рок");
+  response.send("Тренутно је активан други Конкурсни рок"));
 
 bot.onTextMessage(/datum/i, (message, response) =>
-  response.send("Датуми за полагање су...");
+  response.send("Датуми за полагање су..."));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
