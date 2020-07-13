@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 
 const https = require('https');
 const port = process.env.PORT || 8080;
@@ -25,14 +25,14 @@ function say(response, message) {
 
 const bot = new ViberBot({
   authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
-  name: "PetarChatBot",
+  name: "ftnkmprijemni",
   avatar: "https://raw.githubusercontent.com/paundo/viber-bot/master/pravopis.png" // It is recommended to be 720x720, and no more than 100kb.
 });
 
 //bot.on(BotEvents.CONVERSATION_STARTED, (userProfile, isSubscribed, context, onFinish) => response.send(new KeyboardMessage(pocetnaKeyboard)) );
 
 bot.onConversationStarted((userProfile, isSubscribed, context, onFinish) =>{
-  onFinish(new TextMessage(`Здраво! Ја сам PetarChatBot!`,nastaviKeyboard));
+  onFinish(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard));
 });
 
 /*
