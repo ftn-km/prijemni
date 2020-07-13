@@ -25,8 +25,8 @@ function say(response, message) {
 const bot = new ViberBot({
 
   authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
-  name: "ftnkmprijemni",
-  avatar: "https://raw.githubusercontent.com/paundo/viber-bot/master/pravopis.png" // It is recommended to be 720x720, and no more than 100kb.
+  name: "Пријемни испит ФТН КМ",
+  avatar: "https://wpweb-prod.rtu.lv/energy/wp-content/uploads/sites/10/2014/09/FTS_LOGO.png" // It is recommended to be 720x720, and no more than 100kb.
 });
 
 //bot.on(BotEvents.CONVERSATION_STARTED, (userProfile, isSubscribed, context, onFinish) => response.send(new KeyboardMessage(pocetnaKeyboard)) );
@@ -47,7 +47,7 @@ bot.onTextMessage(/konkursniRok/i, (message, response) =>
   response.send(new TextMessage(`Тренутно је активан други конкурсни рок за упис у школску 2020/2021. годину`,konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/datum/i, (message, response) =>
-  response.send("Датуми за полагање су..."));
+  response.send(new TextMessage(`Датуми за полагање пријемног испита у другом конкурсном року су: `,konkursniRokDatumKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
