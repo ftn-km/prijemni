@@ -8,9 +8,9 @@
 		"BgColor": "#F44236",
 		"ActionBody": "saInvaliditetom",
 		"TextVAlign": "center",
-		"Rows": 1,
+		"Rows": 2,
 		"ActionType": "reply",
-		"Columns": 2,
+		"Columns": 3,
 		"TextSize": "small"
     },
     {
@@ -19,9 +19,9 @@
 		"BgColor": "#F44236",
 		"ActionBody": "pripadnikRN",
 		"TextVAlign": "center",
-		"Rows": 1,
+		"Rows": 2,
 		"ActionType": "reply",
-		"Columns": 2,
+		"Columns": 3,
 		"TextSize": "small"
     },
     {
