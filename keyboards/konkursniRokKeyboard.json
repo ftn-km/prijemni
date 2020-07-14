@@ -8,7 +8,7 @@
         "BgColor": "#F44236",
         "ActionBody": "prijavaK",
         "TextVAlign": "center",
-        "Rows": 1,
+        "Rows": 2,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "medium"
@@ -19,7 +19,7 @@
         "BgColor": "#F44236",
         "ActionBody": "polaganjePI",
         "TextVAlign": "center",
-        "Rows": 1,
+        "Rows": 2,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "medium"
@@ -30,7 +30,7 @@
 		"BgColor": "#F44236",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
-		"Rows": 1,
+		"Rows": 2,
 		"ActionType": "reply",
 		"Columns": 6,
 		"TextSize": "medium"
