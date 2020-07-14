@@ -85,7 +85,7 @@ bot.onTextMessage(/studentska/i, (message, response) =>
 );
 
 bot.onTextMessage(/studentska/i, (message, response) => 
-	response.send(new UrlMessage('http://www.ftn.pr.ac.rs', kontaktKeyboard))
+	response.send(new UrlMessage("http://www.ftn.pr.ac.rs", kontaktKeyboard))
 );
 
 bot.onTextMessage(/saInvaliditetom/i, (message, response) =>
