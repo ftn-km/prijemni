@@ -1,17 +1,17 @@
 ﻿{
-  "Type": "keyboard",
-  "InputFieldState": "hidden",
-  "Buttons": [
-    {
-      "Columns": 6,
-      "Rows": 1,
-      "Text": "<font color='#FAFAFA'>Настави</font>",
-      "TextSize": "large",
-      "TextHAlign": "center",
-      "TextVAlign": "center",
-      "ActionType": "reply",
-      "ActionBody": "glavniMeni",
-      "BgColor": "#F44236"
+	"Type": "keyboard",
+	"InputFieldState": "hidden",
+	"Buttons": [
+	{
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Настави</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "glavniMeni",
+		"TextVAlign": "center",
+		"Rows": 1,
+		"ActionType": "reply",
+		"Columns": 6,
+		"TextSize": "medium"
     }
-  ]
+	]
 }
