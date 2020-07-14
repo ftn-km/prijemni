@@ -56,6 +56,10 @@ bot.onTextMessage(/afirmativniUpis/i, (message, response) =>
 	response.send(new KeyboardMessage(afirmativniUpisKeyboard))
 );
 
+bot.onTextMessage(/kontakt/i, (message, response) =>
+	response.send(new KeyboardMessage(kontaktKeyboard))
+);
+
 bot.onTextMessage(/prijavaK/i, (message, response) =>
 	response.send(new TextMessage('Пријављивање кандидата: 01. и 02.09.2020. године у периоду од 08:00 до 14:00 часова', konkursniRokKeyboard))
 );
