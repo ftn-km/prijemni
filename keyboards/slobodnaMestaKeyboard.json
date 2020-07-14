@@ -90,15 +90,26 @@
         "Columns": 2,
         "TextSize": "small"
     },
+    {
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Афирмативни упис</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "afirmativniUpis",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 2,
+		"TextSize": "medium"
+    },	
 	{
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Назад</font>",
 		"BgColor": "#F44236",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
-		"Rows": 2,
+		"Rows": 1,
 		"ActionType": "reply",
-		"Columns": 2,
+		"Columns": 6,
 		"TextSize": "medium"
     }	
     ]
