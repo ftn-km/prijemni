@@ -14,6 +14,7 @@ const request = require('request');
 
 const nastaviKeyboard = require('./keyboards/nastaviKeyboard.json');
 const glavniMeniKeyboard = require('./keyboards/glavniMeniKeyboard.json');
+const konkursniRokKeyboard = require('./keyboards/konkursniRokKeyboard.json');
 
 
 function say(response, message) {
@@ -42,7 +43,7 @@ bot.onTextMessage(/glavniMeni/i, (message, response) =>
   response.send(new KeyboardMessage(glavniMeniKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send(new TextMessage(``,konkursniRokKeyboard)));
+  response.send(new KeyboardMessage(konkursniRokKeyboard)));
 
 bot.onTextMessage(/prijavaK/i, (message, response) =>
   response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokKeyboard)));
