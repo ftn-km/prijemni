@@ -8,10 +8,10 @@
 		"BgColor": "#F44236",
 		"ActionBody": "saInvaliditetom",
 		"TextVAlign": "center",
-		"Rows": 2,
+		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 2,
-		"TextSize": "medium"
+		"TextSize": "small"
     },
     {
 		"TextHAlign": "center",
@@ -19,10 +19,10 @@
 		"BgColor": "#F44236",
 		"ActionBody": "pripadnikRN",
 		"TextVAlign": "center",
-		"Rows": 2,
+		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 2,
-		"TextSize": "medium"
+		"TextSize": "small"
     },
     {
 		"TextHAlign": "center",
@@ -33,7 +33,7 @@
 		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 6,
-		"TextSize": "medium"
+		"TextSize": "small"
     },	
 	{
 		"TextHAlign": "center",
