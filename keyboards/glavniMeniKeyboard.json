@@ -11,7 +11,7 @@
 		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 6,
-		"TextSize": "large"
+		"TextSize": "medium"
     },		
     {
 		"TextHAlign": "center",
@@ -22,7 +22,7 @@
 		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 6,
-		"TextSize": "large"
+		"TextSize": "medium"
     },
     {
 		"TextHAlign": "center",
