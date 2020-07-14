@@ -55,7 +55,7 @@
 		"Rows": 1,
 		"ActionType": "reply",
 		"Columns": 6,
-		"TextSize": "medium"
+		"TextSize": "large"
     }	
     ]
 }
