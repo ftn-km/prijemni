@@ -12,10 +12,8 @@ const PictureMessage = require('viber-bot').Message.Picture;
 const UrlMessage = require('viber-bot').Message.Url;
 const request = require('request');
 
-
 const nastaviKeyboard = require('./keyboards/nastaviKeyboard.json');
-const konkursniRokDatumKeyboard = require('./keyboards/konkursniRokDatumKeyboard.json');
-
+const glavniMeniKeyboard = require('./keyboards/glavniMeniKeyboard.json');
 
 
 function say(response, message) {
@@ -40,14 +38,17 @@ bot.onSubscribe(response => {
   say(response, `Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!`);
 });
 */
-bot.onTextMessage(/konkursniRokDatum/i, (message, response) =>
-  response.send(new KeyboardMessage(konkursniRokDatumKeyboard)));
+bot.onTextMessage(/glavniMeniKeyboard/i, (message, response) =>
+  response.send(new KeyboardMessage(glavniMeniKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send(new TextMessage(`Тренутно је активан други конкурсни рок за упис у школску 2020/2021. годину`,konkursniRokDatumKeyboard)));
+  response.send(new KeyboardMessage(konkursniRokKeyboard)));
 
-bot.onTextMessage(/datum/i, (message, response) =>
-  response.send(new TextMessage(`Датуми за полагање пријемног испита у другом конкурсном року су: `,konkursniRokDatumKeyboard)));
+bot.onTextMessage(/prijavaKandidata/i, (message, response) =>
+  response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,glavniMeniKeyboard)));
+
+bot.onTextMessage(/polaganjePrijemnogIspita/i, (message, response) =>
+  response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,glavniMeniKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
