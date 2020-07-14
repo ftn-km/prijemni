@@ -39,7 +39,7 @@
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Назад</font>",
 		"BgColor": "#F44236",
-		"ActionBody": "glavniMeni",
+		"ActionBody": "slobodnaMesta",
 		"TextVAlign": "center",
 		"Rows": 1,
 		"ActionType": "reply",
