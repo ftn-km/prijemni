@@ -37,7 +37,7 @@ bot.onConversationStarted((userProfile, isSubscribed, context, onFinish) => {
 
 /*
 bot.onSubscribe(response => {
-  say(response, 'Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!');
+	say(response, 'Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!');
 });
 */
 bot.onTextMessage(/glavniMeni/i, (message, response) =>
