@@ -46,6 +46,10 @@ bot.onTextMessage(/konkursniRok/i, (message, response) =>
 	response.send(new KeyboardMessage(konkursniRokKeyboard))
 );
 
+bot.onTextMessage(/slobodnaMesta/i, (message, response) =>
+	response.send(new KeyboardMessage(slobodnaMestaKeyboard))
+);
+
 bot.onTextMessage(/prijavaK/i, (message, response) =>
 	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`, konkursniRokKeyboard))
 );

@@ -97,9 +97,9 @@
 		"BgColor": "#F44236",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
-		"Rows": 2,
+		"Rows": 3,
 		"ActionType": "reply",
-		"Columns": 6,
+		"Columns": 3,
 		"TextSize": "medium"
     }	
     ]
