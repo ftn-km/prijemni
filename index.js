@@ -47,20 +47,25 @@ bot.onTextMessage(/konkursniRok/i, (message, response) =>
 );
 
 bot.onTextMessage(/prijavaK/i, (message, response) =>
-	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokKeyboard))
+	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`, konkursniRokKeyboard))
 );
 
 bot.onTextMessage(/polaganjePI/i, (message, response) =>
-	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard))
+	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`, konkursniRokKeyboard))
 );
 
 bot.onTextMessage(/skolarina/i, (message, response) => [
-	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара',glavniMeniKeyboard)),
-	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €',glavniMeniKeyboard)),
+	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара', glavniMeniKeyboard)),
+	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €', glavniMeniKeyboard)),
+]);
+
+bot.onTextMessage(/predmeti/i, (message, response) => [
+	response.send(new TextMessage('Пријављени кандидати полажу пријемни испит из Математике', glavniMeniKeyboard)),
+	response.send(new TextMessage('за Студијски програм – Архитектура полаже се пријемни испит из Математике (општи део и геометрија) и Слободног цртања', glavniMeniKeyboard)),
 ]);
 
 bot.onTextMessage(/./i, (message, response) => 
-	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard))
+	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.", bttnPocetnaKeyboard))
 );
 
 
