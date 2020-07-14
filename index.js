@@ -64,13 +64,13 @@ bot.onTextMessage(/polaganjePI/i, (message, response) =>
 );
 
 bot.onTextMessage(/skolarina/i, (message, response) => [
-	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара', glavniMeniKeyboard)),
 	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €', glavniMeniKeyboard)),
+	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара', glavniMeniKeyboard)),
 ]);
 
 bot.onTextMessage(/predmeti/i, (message, response) => [
-	response.send(new TextMessage('Пријављени кандидати полажу пријемни испит из Математике', glavniMeniKeyboard)),
 	response.send(new TextMessage('за Студијски програм – Архитектура полаже се пријемни испит из Математике (општи део и геометрија) и Слободног цртања', glavniMeniKeyboard)),
+	response.send(new TextMessage('Пријављени кандидати полажу пријемни испит из Математике', glavniMeniKeyboard)),
 ]);
 
 bot.onTextMessage(/saInvaliditetom/i, (message, response) =>
@@ -86,43 +86,43 @@ bot.onTextMessage(/straniDrzavljani/i, (message, response) =>
 );
 
 bot.onTextMessage(/arhitektura/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 5', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 5', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/gi/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 14', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 14', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/eiri/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 38', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 20', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 38', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/mi/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 4', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 30', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 4', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/izzsiznr/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 27', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 7', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 27', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/ii/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 0', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 10', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 0', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/ri/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 7', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 8', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 7', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/ti/i, (message, response) => [
-	response.send(new TextMessage('Број слободних места на буџету је 17', slobodnaMestaKeyboard)),
 	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на буџету је 17', slobodnaMestaKeyboard)),
 ]);
 
 bot.onTextMessage(/./i, (message, response) => 
