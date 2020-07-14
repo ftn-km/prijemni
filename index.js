@@ -50,6 +50,9 @@ bot.onTextMessage(/prijavaK/i, (message, response) =>
 bot.onTextMessage(/polaganjePI/i, (message, response) =>
   response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
 
+bot.onTextMessage(/datum/i, (message, response) =>
+  response.send(new TextMessage(`Датуми за полагање пријемног испита у другом конкурсном року су: `,glavniMeniKeyboard)));
+
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
 
