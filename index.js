@@ -18,20 +18,19 @@ const konkursniRokKeyboard = require('./keyboards/konkursniRokKeyboard.json');
 const slobodnaMestaKeyboard = require('./keyboards/slobodnaMestaKeyboard.json');
 
 function say(response, message) {
-  response.send(new TextMessage(message,bttnPocetnaKeyboard));
+	response.send(new TextMessage(message,bttnPocetnaKeyboard));
 }
 
 const bot = new ViberBot({
-
-  authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
-  name: "Пријемни испит ФТН КМ",
-  avatar: "https://wpweb-prod.rtu.lv/energy/wp-content/uploads/sites/10/2014/09/FTS_LOGO.png" // It is recommended to be 720x720, and no more than 100kb.
+	authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
+	name: "Пријемни испит ФТН КМ",
+	avatar: "https://wpweb-prod.rtu.lv/energy/wp-content/uploads/sites/10/2014/09/FTS_LOGO.png" // It is recommended to be 720x720, and no more than 100kb.
 });
 
 //bot.on(BotEvents.CONVERSATION_STARTED, (userProfile, isSubscribed, context, onFinish) => response.send(new KeyboardMessage(pocetnaKeyboard)) );
 
-bot.onConversationStarted((userProfile, isSubscribed, context, onFinish) =>{
-  onFinish(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard));
+bot.onConversationStarted((userProfile, isSubscribed, context, onFinish) => {
+	onFinish(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard));
 });
 
 /*
@@ -40,25 +39,22 @@ bot.onSubscribe(response => {
 });
 */
 bot.onTextMessage(/glavniMeni/i, (message, response) =>
-  response.send(new KeyboardMessage(glavniMeniKeyboard)));
+	response.send(new KeyboardMessage(glavniMeniKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
-  response.send(new KeyboardMessage(konkursniRokKeyboard)));
+	response.send(new KeyboardMessage(konkursniRokKeyboard)));
 
 bot.onTextMessage(/prijavaK/i, (message, response) =>
-  response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokKeyboard)));
+	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokKeyboard)));
 
 bot.onTextMessage(/polaganjePI/i, (message, response) =>
-  response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
+	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
 
 bot.onTextMessage(/skolarina/i, (message, response) =>
-	response.send([
-		new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара'),
-		new TextMessage('Школарина за студенте стране држављане износи: 1.200 €',glavniMeniKeyboard)
-	)]);
+	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара',glavniMeniKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
-  response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
+	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
 
 
 const webhookUrl = process.env.WEBHOOK_URL;
