@@ -45,10 +45,10 @@ bot.onTextMessage(/konkursniRok/i, (message, response) =>
   response.send(new KeyboardMessage(konkursniRokKeyboard)));
 
 bot.onTextMessage(/prijavaKandidata/i, (message, response) =>
-  response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,glavniMeniKeyboard)));
+  response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokiKeyboard)));
 
 bot.onTextMessage(/polaganjePrijemnogIspita/i, (message, response) =>
-  response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,glavniMeniKeyboard)));
+  response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
