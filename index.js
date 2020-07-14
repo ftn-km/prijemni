@@ -81,7 +81,7 @@ bot.onTextMessage(/dokumenta/i, (message, response) => [
 ]);
 
 bot.onTextMessage(/studentska/i, (message, response) => 
-	response.send(new TextMessage('За више информација позовите Службу за студентска питања ФТН-а на број телефона 028/425-321', kontaktKeyboard))
+	response.send(new TextMessage('Уколико су Вам потребне додатне информације, контактирајте Службу за студентска питања ФТН-а на број телефона 028/425-321', kontaktKeyboard))
 );
 
 bot.onTextMessage(/webSajt/i, (message, response) => 
