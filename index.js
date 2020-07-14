@@ -16,6 +16,7 @@ const nastaviKeyboard = require('./keyboards/nastaviKeyboard.json');
 const glavniMeniKeyboard = require('./keyboards/glavniMeniKeyboard.json');
 const konkursniRokKeyboard = require('./keyboards/konkursniRokKeyboard.json');
 const slobodnaMestaKeyboard = require('./keyboards/slobodnaMestaKeyboard.json');
+const afirmativniUpisKeyboard = require('./keyboards/afirmativniUpisKeyboard.json');
 
 function say(response, message) {
 	response.send(new TextMessage(message,bttnPocetnaKeyboard));
@@ -30,12 +31,12 @@ const bot = new ViberBot({
 //bot.on(BotEvents.CONVERSATION_STARTED, (userProfile, isSubscribed, context, onFinish) => response.send(new KeyboardMessage(pocetnaKeyboard)) );
 
 bot.onConversationStarted((userProfile, isSubscribed, context, onFinish) => {
-	onFinish(new TextMessage(`Здраво! Ја сам ФТН-ов chat бот за пријемни испит!`,nastaviKeyboard));
+	onFinish(new TextMessage('Здраво! Ја сам ФТН-ов chat бот за пријемни испит!',nastaviKeyboard));
 });
 
 /*
 bot.onSubscribe(response => {
-  say(response, `Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!`);
+  say(response, 'Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!');
 });
 */
 bot.onTextMessage(/glavniMeni/i, (message, response) =>
@@ -50,12 +51,16 @@ bot.onTextMessage(/slobodnaMesta/i, (message, response) =>
 	response.send(new KeyboardMessage(slobodnaMestaKeyboard))
 );
 
+bot.onTextMessage(/afirmativniUpis/i, (message, response) =>
+	response.send(new KeyboardMessage(afirmativniUpisKeyboard))
+);
+
 bot.onTextMessage(/prijavaK/i, (message, response) =>
-	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`, konkursniRokKeyboard))
+	response.send(new TextMessage('Пријављивање кандидата: 01. и 02.09.2020. године', konkursniRokKeyboard))
 );
 
 bot.onTextMessage(/polaganjePI/i, (message, response) =>
-	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`, konkursniRokKeyboard))
+	response.send(new TextMessage('Полагање пријемних испита: 03. и 04.09.2020. године', konkursniRokKeyboard))
 );
 
 bot.onTextMessage(/skolarina/i, (message, response) => [
@@ -67,6 +72,18 @@ bot.onTextMessage(/predmeti/i, (message, response) => [
 	response.send(new TextMessage('Пријављени кандидати полажу пријемни испит из Математике', glavniMeniKeyboard)),
 	response.send(new TextMessage('за Студијски програм – Архитектура полаже се пријемни испит из Математике (општи део и геометрија) и Слободног цртања', glavniMeniKeyboard)),
 ]);
+
+bot.onTextMessage(/saInvaliditetom/i, (message, response) =>
+	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))
+);
+
+bot.onTextMessage(/pripadnikRN/i, (message, response) =>
+	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))
+);
+
+bot.onTextMessage(/straniDrzavljani/i, (message, response) =>
+	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))
+);
 
 bot.onTextMessage(/./i, (message, response) => 
 	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.", bttnPocetnaKeyboard))
