@@ -17,6 +17,7 @@ const glavniMeniKeyboard = require('./keyboards/glavniMeniKeyboard.json');
 const konkursniRokKeyboard = require('./keyboards/konkursniRokKeyboard.json');
 const slobodnaMestaKeyboard = require('./keyboards/slobodnaMestaKeyboard.json');
 const afirmativniUpisKeyboard = require('./keyboards/afirmativniUpisKeyboard.json');
+const kontaktKeyboard = require('./keyboards/kontaktKeyboard.json');
 
 function say(response, message) {
 	response.send(new TextMessage(message,bttnPocetnaKeyboard));
@@ -71,8 +72,17 @@ bot.onTextMessage(/skolarina/i, (message, response) => [
 
 bot.onTextMessage(/dokumenta/i, (message, response) => [
 	response.send(new TextMessage('Приликом пријаве на увид се подносе ОРИГИНАЛНА ДОКУМЕНТА а уз пријавни лист (фотокопирница) предају фотокопије следећих докумената', glavniMeniKeyboard)),
-	response.send(new TextMessage('1. сведочанства сва четри разреда завршене средње школе <br> 2. диплому о положеном завршном испиту', glavniMeniKeyboard)),
+	response.send(new TextMessage('1. сведочанства сва четри разреда завршене средње школе, 2. диплому о положеном завршном испиту, 3. доказ о уплати накнаде за полагање пријемног испита', glavniMeniKeyboard)),
+	response.send(new TextMessage('жиро рачун: 840-1493666-45, прималац: ФТН КМ, износ: 3000 дин.', glavniMeniKeyboard)),
 ]);
+
+bot.onTextMessage(/studentska/i, (message, response) => 
+	response.send(new TextMessage('За више информација позовите Службу за студентска питања ФТН-а на број телефона 028/425-321', kontaktKeyboard))
+);
+
+bot.onTextMessage(/studentska/i, (message, response) => 
+	response.send(new UrlMessage('http://www.ftn.pr.ac.rs', kontaktKeyboard))
+);
 
 bot.onTextMessage(/saInvaliditetom/i, (message, response) =>
 	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))

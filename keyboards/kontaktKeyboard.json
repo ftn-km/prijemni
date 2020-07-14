@@ -1,0 +1,39 @@
+﻿{
+	"Type": "keyboard",
+	"InputFieldState": "hidden",
+	"Buttons": [
+    {
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Студентска служба</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "studentska",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 3,
+		"TextSize": "small"
+    },
+    {
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Веб сајт</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "webSajt",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 3,
+		"TextSize": "small"
+    },	
+	{
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Назад</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "glavniMeni",
+		"TextVAlign": "center",
+		"Rows": 1,
+		"ActionType": "reply",
+		"Columns": 6,
+		"TextSize": "medium"
+    }	
+    ]
+}

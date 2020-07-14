@@ -37,6 +37,17 @@
     },	
     {
 		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Контакт</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "kontakt",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 3,
+		"TextSize": "medium"
+    },		
+    {
+		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Слободна места</font>",
 		"BgColor": "#F44236",
 		"ActionBody": "slobodnaMesta",
