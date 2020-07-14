@@ -8,21 +8,45 @@
 		"BgColor": "#F44236",
 		"ActionBody": "konkursniRok",
 		"TextVAlign": "center",
-		"Rows": 1,
+		"Rows": 2,
 		"ActionType": "reply",
 		"Columns": 3,
 		"TextSize": "medium"
     },
     {
 		"TextHAlign": "center",
-		"Text": "<font color='#FFFFFF'>Датум</font>",
+		"Text": "<font color='#FFFFFF'>Школарина</font>",
 		"BgColor": "#F44236",
-		"ActionBody": "datum",
+		"ActionBody": "skolarina",
 		"TextVAlign": "center",
-		"Rows": 1,
+		"Rows": 2,
 		"ActionType": "reply",
 		"Columns": 3,
 		"TextSize": "medium"
     }
+,
+    {
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Предмети</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "predmeti",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 3,
+		"TextSize": "medium"
+    }
+,
+    {
+		"TextHAlign": "center",
+		"Text": "<font color='#FFFFFF'>Слободна места</font>",
+		"BgColor": "#F44236",
+		"ActionBody": "slobodnaMesta",
+		"TextVAlign": "center",
+		"Rows": 2,
+		"ActionType": "reply",
+		"Columns": 3,
+		"TextSize": "medium"
+    }	
     ]
 }

@@ -15,7 +15,7 @@ const request = require('request');
 const nastaviKeyboard = require('./keyboards/nastaviKeyboard.json');
 const glavniMeniKeyboard = require('./keyboards/glavniMeniKeyboard.json');
 const konkursniRokKeyboard = require('./keyboards/konkursniRokKeyboard.json');
-
+const slobodnaMestaKeyboard = require('./keyboards/slobodnaMestaKeyboard.json');
 
 function say(response, message) {
   response.send(new TextMessage(message,bttnPocetnaKeyboard));
@@ -51,8 +51,8 @@ bot.onTextMessage(/prijavaK/i, (message, response) =>
 bot.onTextMessage(/polaganjePI/i, (message, response) =>
   response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
 
-bot.onTextMessage(/datum/i, (message, response) =>
-  response.send(new TextMessage(`Датуми за полагање пријемног испита у другом конкурсном року су: `,glavniMeniKeyboard)));
+bot.onTextMessage(/skolarina/i, (message, response) =>
+  response.send(new TextMessage(['Школарина за самофинансирајуће студенте износи: 30.000 динара', 'Школарина за студенте стране држављане износи: 1.200 €'],glavniMeniKeyboard)));
 
 bot.onTextMessage(/./i, (message, response) => 
   response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.",bttnPocetnaKeyboard)));
