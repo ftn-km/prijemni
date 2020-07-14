@@ -69,6 +69,11 @@ bot.onTextMessage(/skolarina/i, (message, response) => [
 	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €', glavniMeniKeyboard)),
 ]);
 
+bot.onTextMessage(/dokumenta/i, (message, response) => [
+	response.send(new TextMessage('Приликом пријаве на увид се подносе ОРИГИНАЛНА ДОКУМЕНТА а уз пријавни лист (фотокопирница) предају фотокопије следећих докумената', glavniMeniKeyboard)),
+	response.send(new TextMessage('1. сведочанства сва четри разреда завршене средње школе <br> 2. диплому о положеном завршном испиту', glavniMeniKeyboard)),
+]);
+
 bot.onTextMessage(/saInvaliditetom/i, (message, response) =>
 	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))
 );
