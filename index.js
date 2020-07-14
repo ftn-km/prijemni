@@ -38,7 +38,7 @@ bot.onSubscribe(response => {
   say(response, `Hi there ${response.userProfile.name}. I am ${bot.name}! Feel free to ask me if a web site is down for everyone or just you. Just send me a name of a website and I'll do the rest!`);
 });
 */
-bot.onTextMessage(/glavniMeniKeyboard/i, (message, response) =>
+bot.onTextMessage(/glavniMeni/i, (message, response) =>
   response.send(new KeyboardMessage(glavniMeniKeyboard)));
 
 bot.onTextMessage(/konkursniRok/i, (message, response) =>
