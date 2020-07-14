@@ -60,18 +60,13 @@ bot.onTextMessage(/prijavaK/i, (message, response) =>
 );
 
 bot.onTextMessage(/polaganjePI/i, (message, response) => [
-	response.send(new TextMessage('Полагање пријемног испита ће се одржати 03.09.2020. године у 10:00 часова', konkursniRokKeyboard)),
+	response.send(new TextMessage('Полагање пријемног испита из математике ће се одржати 03.09.2020. године у 10:00 часова', konkursniRokKeyboard)),
 	response.send(new TextMessage('за Студијски програм – Архитектура полаже се и пријемни испит из Слободног цртања 03.09.2020 у 13:00 часова', konkursniRokKeyboard)),
 ]);
 
 bot.onTextMessage(/skolarina/i, (message, response) => [
 	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара', glavniMeniKeyboard)),
 	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €', glavniMeniKeyboard)),
-]);
-
-bot.onTextMessage(/predmeti/i, (message, response) => [
-	response.send(new TextMessage('Полаже се пријемни испит из Математике', konkursniRokKeyboard)),
-	response.send(new TextMessage('за Студијски програм – Архитектура полаже се и пријемни испит из Слободног цртања', konkursniRokKeyboard)),
 ]);
 
 bot.onTextMessage(/saInvaliditetom/i, (message, response) =>

@@ -24,17 +24,6 @@
         "Columns": 3,
         "TextSize": "medium"
     },
-    {
-		"TextHAlign": "center",
-		"Text": "<font color='#FFFFFF'>Предмети</font>",
-		"BgColor": "#F44236",
-		"ActionBody": "predmeti",
-		"TextVAlign": "center",
-		"Rows": 2,
-		"ActionType": "reply",
-		"Columns": 3,
-		"TextSize": "medium"
-    },	
 	{
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Назад</font>",
