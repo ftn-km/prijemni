@@ -8,9 +8,9 @@
 		"BgColor": "#F44236",
 		"ActionBody": "konkursniRok",
 		"TextVAlign": "center",
-		"Rows": 16,
+		"Rows": 1,
 		"ActionType": "reply",
-		"Columns": 3,
+		"Columns": 6,
 		"TextSize": "large"
     },		
     {
