@@ -53,7 +53,7 @@ bot.onTextMessage(/polaganjePI/i, (message, response) =>
 
 bot.onTextMessage(/skolarina/i, (message, response) =>
 	response.send([
-		new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара',glavniMeniKeyboard),
+		new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара'),
 		new TextMessage('Школарина за студенте стране држављане износи: 1.200 €',glavniMeniKeyboard)
 	)]);
 
