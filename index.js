@@ -47,8 +47,9 @@ bot.onTextMessage(/konkursniRok/i, (message, response) =>
 bot.onTextMessage(/prijavaK/i, (message, response) =>
 	response.send(new TextMessage(`Пријављивање кандидата: 01. и 02.09.2020. године`,konkursniRokKeyboard)));
 
-bot.onTextMessage(/polaganjePI/i, (message, response) =>
-	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)));
+bot.onTextMessage(/polaganjePI/i, (message, response) => [
+	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard)), 
+	response.send(new TextMessage(`Полагање пријемних испита: 03. и 04.09.2020. године`,konkursniRokKeyboard))]);
 
 bot.onTextMessage(/skolarina/i, (message, response) =>
 	response.send(new TextMessage('Школарина за самофинансирајуће студенте износи: 30.000 динара',glavniMeniKeyboard)));
