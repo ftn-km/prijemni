@@ -8,7 +8,7 @@
         "BgColor": "#F44236",
         "ActionBody": "arhitektura",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -19,7 +19,7 @@
         "BgColor": "#F44236",
         "ActionBody": "gi",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -30,7 +30,7 @@
 		"BgColor": "#F44236",
 		"ActionBody": "eiri",
 		"TextVAlign": "center",
-		"Rows": 3,
+		"Rows": 5,
 		"ActionType": "reply",
 		"Columns": 3,
 		"TextSize": "small"
@@ -41,7 +41,7 @@
         "BgColor": "#F44236",
         "ActionBody": "mi",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -52,7 +52,7 @@
         "BgColor": "#F44236",
         "ActionBody": "izzsiznr",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -63,7 +63,7 @@
 		"BgColor": "#F44236",
 		"ActionBody": "ii",
 		"TextVAlign": "center",
-		"Rows": 3,
+		"Rows": 5,
 		"ActionType": "reply",
 		"Columns": 3,
 		"TextSize": "small"
@@ -74,7 +74,7 @@
         "BgColor": "#F44236",
         "ActionBody": "ri",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -85,7 +85,7 @@
         "BgColor": "#F44236",
         "ActionBody": "ti",
         "TextVAlign": "center",
-        "Rows": 3,
+        "Rows": 5,
         "ActionType": "reply",
         "Columns": 3,
         "TextSize": "small"
@@ -96,7 +96,7 @@
 		"BgColor": "#F44236",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
-		"Rows": 3,
+		"Rows": 5,
 		"ActionType": "reply",
 		"Columns": 3,
 		"TextSize": "medium"
