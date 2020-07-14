@@ -56,12 +56,13 @@ bot.onTextMessage(/afirmativniUpis/i, (message, response) =>
 );
 
 bot.onTextMessage(/prijavaK/i, (message, response) =>
-	response.send(new TextMessage('Пријављивање кандидата: 01. и 02.09.2020. године', konkursniRokKeyboard))
+	response.send(new TextMessage('Пријављивање кандидата: 01. и 02.09.2020. године у периоду од 08:00 до 14:00 часова', konkursniRokKeyboard))
 );
 
-bot.onTextMessage(/polaganjePI/i, (message, response) =>
-	response.send(new TextMessage('Полагање пријемних испита: 03. и 04.09.2020. године', konkursniRokKeyboard))
-);
+bot.onTextMessage(/polaganjePI/i, (message, response) => [
+	response.send(new TextMessage('Полагање пријемног испита ће се одржати 03.09.2020. године у 10:00 часова', glavniMeniKeyboard)),
+	response.send(new TextMessage('за Студијски програм – Архитектура полаже се и пријемни испит из Слободног цртања 03.09.2020 у 13:00 часова', glavniMeniKeyboard)),
+]);
 
 bot.onTextMessage(/skolarina/i, (message, response) => [
 	response.send(new TextMessage('Школарина за студенте стране држављане износи: 1.200 €', glavniMeniKeyboard)),
