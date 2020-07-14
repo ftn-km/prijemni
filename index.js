@@ -85,6 +85,46 @@ bot.onTextMessage(/straniDrzavljani/i, (message, response) =>
 	response.send(new TextMessage('2 слободна места', afirmativniUpisKeyboard))
 );
 
+bot.onTextMessage(/arhitektura/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 5', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/gi/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 14', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/eiri/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 38', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 20', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/mi/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 4', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 30', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/izzsiznr/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 27', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 7', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/ii/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 0', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 10', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/ri/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 7', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 8', slobodnaMestaKeyboard)),
+]);
+
+bot.onTextMessage(/ti/i, (message, response) => [
+	response.send(new TextMessage('Број слободних места на буџету је 17', slobodnaMestaKeyboard)),
+	response.send(new TextMessage('Број слободних места на самофинансирању је 5', slobodnaMestaKeyboard)),
+]);
+
 bot.onTextMessage(/./i, (message, response) => 
 	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.", bttnPocetnaKeyboard))
 );
