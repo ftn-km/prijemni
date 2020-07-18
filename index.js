@@ -26,7 +26,7 @@ function say(response, message) {
 const bot = new ViberBot({
 	authToken: process.env.VIBER_PUBLIC_ACCOUNT_ACCESS_TOKEN_KEY,
 	name: "Пријемни испит ФТН КМ",
-	avatar: "https://wpweb-prod.rtu.lv/energy/wp-content/uploads/sites/10/2014/09/FTS_LOGO.png" // It is recommended to be 720x720, and no more than 100kb.
+	avatar: "./img/ftnkm-logo.png" // It is recommended to be 720x720, and no more than 100kb.
 });
 
 //bot.on(BotEvents.CONVERSATION_STARTED, (userProfile, isSubscribed, context, onFinish) => response.send(new KeyboardMessage(pocetnaKeyboard)) );
