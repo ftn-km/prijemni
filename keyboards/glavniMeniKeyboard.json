@@ -5,7 +5,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Други Конкурсни рок</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "konkursniRok",
 		"TextVAlign": "center",
 		"Rows": 1,
@@ -16,7 +16,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Слободна места</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "slobodnaMesta",
 		"TextVAlign": "center",
 		"Rows": 1,
@@ -27,7 +27,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Школарина</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "skolarina",
 		"TextVAlign": "center",
 		"Rows": 2,
@@ -38,7 +38,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Документа за упис</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "dokumenta",
 		"TextVAlign": "center",
 		"Rows": 2,
@@ -49,7 +49,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Контакт</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "kontakt",
 		"TextVAlign": "center",
 		"Rows": 1,

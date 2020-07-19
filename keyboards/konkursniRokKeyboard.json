@@ -5,7 +5,7 @@
     {
         "TextHAlign": "center",
         "Text": "<font color='#FFFFFF'>Пријављивање кандидата</font>",
-        "BgColor": "#F44236",
+        "BgColor": "#980C13",
         "ActionBody": "prijavaK",
         "TextVAlign": "center",
         "Rows": 2,
@@ -16,7 +16,7 @@
     {
         "TextHAlign": "center",
         "Text": "<font color='#FFFFFF'>Полагање пријемног испита</font>",
-        "BgColor": "#F44236",
+        "BgColor": "#980C13",
         "ActionBody": "polaganjePI",
         "TextVAlign": "center",
         "Rows": 2,
@@ -27,7 +27,7 @@
 	{
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Назад</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
 		"Rows": 2,

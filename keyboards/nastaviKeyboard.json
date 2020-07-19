@@ -5,7 +5,7 @@
 	{
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Настави</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "glavniMeni",
 		"TextVAlign": "center",
 		"Rows": 1,

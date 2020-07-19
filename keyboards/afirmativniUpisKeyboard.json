@@ -5,7 +5,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Са инвалидитетом</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "saInvaliditetom",
 		"TextVAlign": "center",
 		"Rows": 2,
@@ -16,7 +16,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Припадника ромске националности</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "pripadnikRN",
 		"TextVAlign": "center",
 		"Rows": 2,
@@ -27,7 +27,7 @@
     {
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Држављани Републике Србије који су у школској 2019/2020. години средњу школу завршили у иностранству</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "straniDrzavljani",
 		"TextVAlign": "center",
 		"Rows": 1,
@@ -38,7 +38,7 @@
 	{
 		"TextHAlign": "center",
 		"Text": "<font color='#FFFFFF'>Назад</font>",
-		"BgColor": "#F44236",
+		"BgColor": "#980C13",
 		"ActionBody": "slobodnaMesta",
 		"TextVAlign": "center",
 		"Rows": 1,
