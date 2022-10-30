@@ -144,8 +144,6 @@ bot.onTextMessage(/./i, (message, response) =>
 	response.send(new TextMessage("Појам који сте тражили није тренутно евидентиран у бази знања.", bttnPocetnaKeyboard))
 );
 
-
 const webhookUrl = process.env.WEBHOOK_URL;
 
 const server = http.createServer(bot.middleware()).listen(port, () => bot.setWebhook(process.env.WEBHOOK_URL));
-
