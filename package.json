@@ -1,12 +1,12 @@
 {
-  "name": "ftnkmprijemni",
+  "name": "prijemni",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tijana paunovic",
+  "author": "Petar Milic, Dragisa Miljkovic, Stefan Pitulic",
   "license": "ISC",
   "dependencies": {
     "request": "^2.83.0",
